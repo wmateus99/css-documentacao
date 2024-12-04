@@ -1,0 +1,155 @@
+/* Reset básico */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #1e1e2e;
+    color: #f8f8f2;
+    padding: 1rem;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #ff79c6;
+}
+
+.section {
+    margin-bottom: 2rem;
+}
+
+.section h2 {
+    font-size: 1.8rem;
+    color: #50fa7b;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #44475a;
+    padding-bottom: 0.5rem;
+}
+
+.property-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.property {
+    cursor: pointer;
+    background-color: #282a36;
+    border: 1px solid #44475a;
+    border-radius: 8px;
+    padding: 1rem;
+    transition: .2s ease;
+    flex: 1 1 calc(45% - 1rem);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.property:hover {
+    scale: 1.01;
+    background-color: #313341;
+}
+
+.property code {
+    background-color: #44475a;
+    color: #8be9fd;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+}
+
+.property p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .property {
+        flex: 1 1 100%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+    .navegar ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media (min-width: 728px) {
+    .navegar ul {
+        overflow: scroll;
+        height: 40px;
+    }
+    .navegar ul li {
+        margin-bottom: 10px;
+    }
+    .navegar ul::-webkit-scrollbar {
+        height: 8px;
+        width: 0;
+        /* background-color: #50fa7b; */
+    }
+    .navegar ul::-webkit-scrollbar-thumb {
+        background-color: #44475a;
+        border-radius: 20px;
+    }
+    .navegar ul::-webkit-scrollbar-track {
+        background-color: #282a36;
+        border-radius: 20px;
+    }
+}
+
+.navegar {
+    margin-bottom: 30px;
+}
+.navegar ul {
+    display: flex;
+    gap: 10px 10px;
+    list-style: none;
+    justify-content: space-around;
+    
+}
+.navegar ul li {
+    background: #282a36;
+    border: 1px solid #44475a;
+    padding: 0px 10px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+.navegar ul li a {
+    color: #fff;
+    border: none;
+    font-size: 13px;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.voltar-topo {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    display: none; /* Inicialmente escondido */
+    z-index: 1000;
+}
+
+.botao img {
+    transition: .2s;
+    width: 40px; /* Ajuste o tamanho da imagem como preferir */
+    cursor: pointer;
+}
+.botao img:active {
+    scale: 1.1;
+}

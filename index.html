@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Documentação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>CSS - Documentação</h1>
+
+    <nav class="navegar">
+        <ul>
+            <li><a href="#background">Background</a></li>
+            <li><a href="#border">Border</a></li>
+            <li><a href="#font">Font</a></li>
+            <li><a href="#box-model">Box Model</a></li>
+            <li><a href="#text">Text</a></li>
+            <li><a href="#column">Column</a></li>
+            <li><a href="#color">Color</a></li>
+            <li><a href="#template-layout">Layout</a></li>
+            <li><a href="#table">Table</a></li>
+            <li><a href="#speech">Speech</a></li>
+        </ul>
+    </nav>
+
+    <div class="voltar-topo">
+        <div class="botao">
+            <img src="img/de-volta-ao-topo.png" alt="Voltar ao Topo">
+        </div>
+    </div>
+
+    <!-- Seção de Background -->
+    <div class="section" id="background">
+        <h2>Background</h2>
+        <div class="property-list">
+            <div class="property">
+                <code>background-image</code>
+                <p>Define a imagem de fundo usando uma URL. Exemplo: <code>url(imagem.jpg)</code>.</p>
+            </div>
+            <div class="property">
+                <code>background-position</code>
+                <p>Define a posição da imagem de fundo. Exemplo: <code>background-position: center;</code>.</p>
+            </div>
+            <div class="property">
+                <code>background-size</code>
+                <p>Define o tamanho da imagem de fundo. Exemplo: <code>background-size: cover;</code>.</p>
+            </div>
+            <div class="property">
+                <code>background-repeat</code>
+                <p>Define se a imagem de fundo será repetida. Exemplo: <code>background-repeat: no-repeat;</code>.</p>
+            </div>
+            <div class="property">
+                <code>background-attachment</code>
+                <p>Controla se a imagem de fundo fica fixa ou se move com o scroll. Exemplo: <code>background-attachment: fixed;</code>.</p>
+            </div>
+            <div class="property">
+                <code>background-origin</code>
+                <p>Define onde o background começa, baseado na caixa do elemento. Exemplo: <code>background-origin: padding-box;</code>.</p>
+            </div>
+            <div class="property">
+                <code>background-clip</code>
+                <p>Determina até onde o fundo será exibido, como até o conteúdo ou a borda. Exemplo: <code>background-clip: border-box;</code>.</p>
+            </div>
+            <div class="property">
+                <code>background-color</code>
+                <p>Define a cor de fundo do elemento. Exemplo: <code>background-color: #000;</code>.</p>
+            </div>
+        </div>
+    </div>
+
+        <!-- Seção de Border -->
+    <div class="section" id="border">
+        <h2>Border</h2>
+        <div class="property-list">
+            <div class="property">
+                <code>border</code>
+                <p>Define a largura, estilo e cor da borda de um elemento. Exemplo: <code>border: 1px solid #000;</code>.</p>
+            </div>
+            <div class="property">
+                <code>border-break</code>
+                <p>Define o comportamento das bordas ao quebrar uma linha em elementos como tabelas. Exemplo: <code>border-break: slice;</code>.</p>
+            </div>
+            <div class="property">
+                <code>border-bottom</code>
+                <p>Define a borda inferior do elemento. Exemplo: <code>border-bottom: 2px dashed red;</code>.</p>
+            </div>
+            <div class="property">
+                <code>border-bottom-color</code>
+                <p>Define a cor da borda inferior. Exemplo: <code>border-bottom-color: #ff0000;</code>.</p>
+            </div>
+            <div class="property">
+                <code>border-bottom-style</code>
+                <p>Define o estilo da borda inferior. Exemplo: <code>border-bottom-style: dotted;</code>.</p>
+            </div>
+            <div class="property">
+                <code>border-bottom-width</code>
+                <p>Define a largura da borda inferior. Exemplo: <code>border-bottom-width: 5px;</code>.</p>
+            </div>
+            <div class="property">
+                <code>border-collapse</code>
+                <p>Controla a fusão das bordas em tabelas. Exemplo: <code>border-collapse: collapse;</code>.</p>
+            </div>
+            <div class="property">
+                <code>border-color</code>
+                <p>Define a cor das bordas. Exemplo: <code>border-color: #00ff00;</code>.</p>
+            </div>
+            <div class="property">
+                <code>border-image</code>
+                <p>Define uma imagem como borda. Exemplo: <code>border-image: url(border.png) 30 stretch;</code>.</p>
+            </div>
+            <div class="property">
+                <code>border-left</code>
+                <p>Define a borda à esquerda do elemento. Exemplo: <code>border-left: 3px solid blue;</code>.</p>
+            </div>
+            <div class="property">
+                <code>border-left-color</code>
+                <p>Define a cor da borda à esquerda. Exemplo: <code>border-left-color: yellow;</code>.</p>
+            </div>
+            <div class="property">
+                <code>border-left-style</code>
+                <p>Define o estilo da borda à esquerda. Exemplo: <code>border-left-style: solid;</code>.</p>
+            </div>
+            <div class="property">
+                <code>border-left-width</code>
+                <p>Define a largura da borda à esquerda. Exemplo: <code>border-left-width: 2px;</code>.</p>
+            </div>
+            <div class="property">
+                <code>border-right</code>
+                <p>Define a borda à direita do elemento. Exemplo: <code>border-right: 4px dashed green;</code>.</p>
+            </div>
+            <div class="property">
+                <code>border-right-color</code>
+                <p>Define a cor da borda à direita. Exemplo: <code>border-right-color: pink;</code>.</p>
+            </div>
+            <div class="property">
+                <code>border-right-style</code>
+                <p>Define o estilo da borda à direita. Exemplo: <code>border-right-style: double;</code>.</p>
+            </div>
+            <div class="property">
+                <code>border-right-width</code>
+                <p>Define a largura da borda à direita. Exemplo: <code>border-right-width: 6px;</code>.</p>
+            </div>
+            <div class="property">
+                <code>border-top</code>
+                <p>Define a borda superior do elemento. Exemplo: <code>border-top: 2px solid orange;</code>.</p>
+            </div>
+            <div class="property">
+                <code>border-top-color</code>
+                <p>Define a cor da borda superior. Exemplo: <code>border-top-color: #0000ff;</code>.</p>
+            </div>
+            <div class="property">
+                <code>border-top-style</code>
+                <p>Define o estilo da borda superior. Exemplo: <code>border-top-style: solid;</code>.</p>
+            </div>
+            <div class="property">
+                <code>border-top-width</code>
+                <p>Define a largura da borda superior. Exemplo: <code>border-top-width: 8px;</code>.</p>
+            </div>
+            <div class="property">
+                <code>border-width</code>
+                <p>Define a largura de todas as bordas do elemento. Exemplo: <code>border-width: 3px;</code>.</p>
+            </div>
+            <div class="property">
+                <code>border-radius</code>
+                <p>Define o raio das bordas do elemento (bordas arredondadas). Exemplo: <code>border-radius: 10px;</code>.</p>
+            </div>
+            <div class="property">
+                <code>border-top-right-radius</code>
+                <p>Define o raio da borda superior direita. Exemplo: <code>border-top-right-radius: 20px;</code>.</p>
+            </div>
+            <div class="property">
+                <code>border-bottom-right-radius</code>
+                <p>Define o raio da borda inferior direita. Exemplo: <code>border-bottom-right-radius: 15px;</code>.</p>
+            </div>
+            <div class="property">
+                <code>border-bottom-left-radius</code>
+                <p>Define o raio da borda inferior esquerda. Exemplo: <code>border-bottom-left-radius: 25px;</code>.</p>
+            </div>
+            <div class="property">
+                <code>border-top-left-radius</code>
+                <p>Define o raio da borda superior esquerda. Exemplo: <code>border-top-left-radius: 30px;</code>.</p>
+            </div>
+            <div class="property">
+                <code>box-shadow</code>
+                <p>Adiciona sombra ao redor de um elemento. Exemplo: <code>box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);</code>.</p>
+            </div>
+            <div class="property">
+                <code>border-style</code>
+                <p>Define o estilo das bordas (como solid, dotted, dashed). Exemplo: <code>border-style: dashed;</code>.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seção de Font -->
+    <div class="section" id="font">
+        <h2>Font</h2>
+        <div class="property-list">
+            <div class="property">
+                <code>font</code>
+                <p>Atalho para definir várias propriedades de fontes ao mesmo tempo, como o estilo, peso, tamanho, família e altura da linha. Exemplo: <code>font: italic bold 16px Arial, sans-serif;</code>.</p>
+            </div>
+            <div class="property">
+                <code>font-family</code>
+                <p>Define a(s) família(s) de fontes para o texto. Exemplo: <code>font-family: 'Arial', sans-serif;</code>.</p>
+            </div>
+            <div class="property">
+                <code>font-size</code>
+                <p>Define o tamanho da fonte. Exemplo: <code>font-size: 18px;</code>.</p>
+            </div>
+            <div class="property">
+                <code>font-size-adjust</code>
+                <p>Controla o ajuste do tamanho da fonte para um aspecto mais legível. Exemplo: <code>font-size-adjust: 0.5;</code>.</p>
+            </div>
+            <div class="property">
+                <code>font-stretch</code>
+                <p>Define a largura da fonte (como condensada ou expandida). Exemplo: <code>font-stretch: condensed;</code>.</p>
+            </div>
+            <div class="property">
+                <code>font-style</code>
+                <p>Define o estilo da fonte (normal, itálico, oblíquo). Exemplo: <code>font-style: italic;</code>.</p>
+            </div>
+            <div class="property">
+                <code>font-variant</code>
+                <p>Define variantes específicas de fontes, como estilos pequenos ou estilos de capitais. Exemplo: <code>font-variant: small-caps;</code>.</p>
+            </div>
+            <div class="property">
+                <code>font-weight</code>
+                <p>Define o peso da fonte (normal, bold, numérico). Exemplo: <code>font-weight: bold;</code>.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seção de Box Model -->
+    <div class="section" id="box-model">
+        <h2>Box Model</h2>
+        <div class="property-list">
+            <div class="property">
+                <code>clear</code>
+                <p>Define como o conteúdo flui em relação aos elementos flutuantes. Exemplo: <code>clear: both;</code>.</p>
+            </div>
+            <div class="property">
+                <code>display</code>
+                <p>Define o tipo de exibição do elemento, como blocos ou em linha. Exemplo: <code>display: block;</code>.</p>
+            </div>
+            <div class="property">
+                <code>float</code>
+                <p>Define se o elemento flutua à esquerda ou à direita. Exemplo: <code>float: left;</code>.</p>
+            </div>
+            <div class="property">
+                <code>height</code>
+                <p>Define a altura do elemento. Exemplo: <code>height: 100px;</code>.</p>
+            </div>
+            <div class="property">
+                <code>max-height</code>
+                <p>Define a altura máxima do elemento. Exemplo: <code>max-height: 200px;</code>.</p>
+            </div>
+            <div class="property">
+                <code>max-width</code>
+                <p>Define a largura máxima do elemento. Exemplo: <code>max-width: 500px;</code>.</p>
+            </div>
+            <div class="property">
+                <code>min-height</code>
+                <p>Define a altura mínima do elemento. Exemplo: <code>min-height: 50px;</code>.</p>
+            </div>
+            <div class="property">
+                <code>min-width</code>
+                <p>Define a largura mínima do elemento. Exemplo: <code>min-width: 100px;</code>.</p>
+            </div>
+            <div class="property">
+                <code>width</code>
+                <p>Define a largura do elemento. Exemplo: <code>width: 200px;</code>.</p>
+            </div>
+            <div class="property">
+                <code>margin</code>
+                <p>Define a margem ao redor de um elemento. Exemplo: <code>margin: 20px;</code>.</p>
+            </div>
+            <div class="property">
+                <code>margin-bottom</code>
+                <p>Define a margem inferior de um elemento. Exemplo: <code>margin-bottom: 15px;</code>.</p>
+            </div>
+            <div class="property">
+                <code>margin-left</code>
+                <p>Define a margem à esquerda de um elemento. Exemplo: <code>margin-left: 30px;</code>.</p>
+            </div>
+            <div class="property">
+                <code>margin-right</code>
+                <p>Define a margem à direita de um elemento. Exemplo: <code>margin-right: 25px;</code>.</p>
+            </div>
+            <div class="property">
+                <code>margin-top</code>
+                <p>Define a margem superior de um elemento. Exemplo: <code>margin-top: 10px;</code>.</p>
+            </div>
+            <div class="property">
+                <code>padding</code>
+                <p>Define o preenchimento (espaço interno) de um elemento. Exemplo: <code>padding: 15px;</code>.</p>
+            </div>
+            <div class="property">
+                <code>padding-bottom</code>
+                <p>Define o preenchimento inferior de um elemento. Exemplo: <code>padding-bottom: 10px;</code>.</p>
+            </div>
+            <div class="property">
+                <code>padding-left</code>
+                <p>Define o preenchimento à esquerda de um elemento. Exemplo: <code>padding-left: 20px;</code>.</p>
+            </div>
+            <div class="property">
+                <code>padding-right</code>
+                <p>Define o preenchimento à direita de um elemento. Exemplo: <code>padding-right: 25px;</code>.</p>
+            </div>
+            <div class="property">
+                <code>padding-top</code>
+                <p>Define o preenchimento superior de um elemento. Exemplo: <code>padding-top: 5px;</code>.</p>
+            </div>
+            <div class="property">
+                <code>marquee-direction</code>
+                <p>Define a direção do movimento de um marquee (movimento de texto). Exemplo: <code>marquee-direction: left;</code>.</p>
+            </div>
+            <div class="property">
+                <code>marquee-loop</code>
+                <p>Define o número de repetições do movimento de um marquee. Exemplo: <code>marquee-loop: infinite;</code>.</p>
+            </div>
+            <div class="property">
+                <code>marquee-play-count</code>
+                <p>Define o número de vezes que o conteúdo de um marquee será exibido. Exemplo: <code>marquee-play-count: 5;</code>.</p>
+            </div>
+            <div class="property">
+                <code>marquee-speed</code>
+                <p>Define a velocidade do movimento de um marquee. Exemplo: <code>marquee-speed: slow;</code>.</p>
+            </div>
+            <div class="property">
+                <code>marquee-style</code>
+                <p>Define o estilo do movimento de um marquee. Exemplo: <code>marquee-style: scroll;</code>.</p>
+            </div>
+            <div class="property">
+                <code>overflow</code>
+                <p>Define como o conteúdo transbordante do elemento será tratado. Exemplo: <code>overflow: auto;</code>.</p>
+            </div>
+            <div class="property">
+                <code>overflow-style</code>
+                <p>Define o estilo do controle de rolagem do conteúdo transbordante. Exemplo: <code>overflow-style: scrollbar;</code>.</p>
+            </div>
+            <div class="property">
+                <code>overflow-x</code>
+                <p>Controla o transbordamento horizontal do conteúdo. Exemplo: <code>overflow-x: hidden;</code>.</p>
+            </div>
+            <div class="property">
+                <code>overflow-y</code>
+                <p>Controla o transbordamento vertical do conteúdo. Exemplo: <code>overflow-y: scroll;</code>.</p>
+            </div>
+            <div class="property">
+                <code>rotation</code>
+                <p>Define a rotação de um elemento. Exemplo: <code>rotation: 45deg;</code>.</p>
+            </div>
+            <div class="property">
+                <code>rotation-point</code>
+                <p>Define o ponto de rotação do elemento. Exemplo: <code>rotation-point: center center;</code>.</p>
+            </div>
+            <div class="property">
+                <code>visibility</code>
+                <p>Controla a visibilidade do elemento. Exemplo: <code>visibility: hidden;</code>.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seção de Text -->
+    <div class="section" id="text">
+        <h2>Text</h2>
+        <div class="property-list">
+            <div class="property">
+                <code>direction</code>
+                <p>Define a direção do texto, como da esquerda para a direita ou da direita para a esquerda. Exemplo: <code>direction: rtl;</code>.</p>
+            </div>
+            <div class="property">
+                <code>hanging-punctuation</code>
+                <p>Define a exibição de pontuação pendente no início ou no final de uma linha. Exemplo: <code>hanging-punctuation: first;</code>.</p>
+            </div>
+            <div class="property">
+                <code>letter-spacing</code>
+                <p>Define o espaço entre as letras de um texto. Exemplo: <code>letter-spacing: 2px;</code>.</p>
+            </div>
+            <div class="property">
+                <code>punctuation-trim</code>
+                <p>Define se a pontuação será mantida ou ajustada nas bordas. Exemplo: <code>punctuation-trim: trim;</code>.</p>
+            </div>
+            <div class="property">
+                <code>text-align</code>
+                <p>Define o alinhamento do texto. Exemplo: <code>text-align: center;</code>.</p>
+            </div>
+            <div class="property">
+                <code>text-align-last</code>
+                <p>Define o alinhamento da última linha de um bloco de texto. Exemplo: <code>text-align-last: right;</code>.</p>
+            </div>
+            <div class="property">
+                <code>text-decoration</code>
+                <p>Define a decoração do texto, como sublinhado ou tachado. Exemplo: <code>text-decoration: underline;</code>.</p>
+            </div>
+            <div class="property">
+                <code>text-emphasis</code>
+                <p>Adiciona ênfase ao texto, como um círculo ou ponto. Exemplo: <code>text-emphasis: filled circle;</code>.</p>
+            </div>
+            <div class="property">
+                <code>text-indent</code>
+                <p>Define a indentação do texto. Exemplo: <code>text-indent: 20px;</code>.</p>
+            </div>
+            <div class="property">
+                <code>text-justify</code>
+                <p>Define o ajuste do texto em linhas justas. Exemplo: <code>text-justify: inter-word;</code>.</p>
+            </div>
+            <div class="property">
+                <code>text-outline</code>
+                <p>Adiciona um contorno ao texto. Exemplo: <code>text-outline: 2px solid black;</code>.</p>
+            </div>
+            <div class="property">
+                <code>text-shadow</code>
+                <p>Adiciona sombra ao texto. Exemplo: <code>text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);</code>.</p>
+            </div>
+            <div class="property">
+                <code>text-transform</code>
+                <p>Define a transformação do texto, como maiúsculas ou minúsculas. Exemplo: <code>text-transform: uppercase;</code>.</p>
+            </div>
+            <div class="property">
+                <code>text-wrap</code>
+                <p>Controla a quebra de linha no texto. Exemplo: <code>text-wrap: normal;</code>.</p>
+            </div>
+            <div class="property">
+                <code>unicode-bidi</code>
+                <p>Define a direção do texto para idiomas bidirecionais. Exemplo: <code>unicode-bidi: bidi-override;</code>.</p>
+            </div>
+            <div class="property">
+                <code>white-space</code>
+                <p>Controla o comportamento do espaço em branco no texto. Exemplo: <code>white-space: nowrap;</code>.</p>
+            </div>
+            <div class="property">
+                <code>white-space-collapse</code>
+                <p>Define se os espaços em branco colapsam em espaços simples. Exemplo: <code>white-space-collapse: collapse;</code>.</p>
+            </div>
+            <div class="property">
+                <code>word-break</code>
+                <p>Define como as palavras são quebradas quando alcançam o final da linha. Exemplo: <code>word-break: break-word;</code>.</p>
+            </div>
+            <div class="property">
+                <code>word-spacing</code>
+                <p>Define o espaçamento entre as palavras. Exemplo: <code>word-spacing: 5px;</code>.</p>
+            </div>
+            <div class="property">
+                <code>word-wrap</code>
+                <p>Controla a quebra de palavras dentro de um elemento. Exemplo: <code>word-wrap: break-word;</code>.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seção de Column -->
+    <div class="section" id="column">
+        <h2>Column</h2>
+        <div class="property-list">
+            <div class="property">
+                <code>column-count</code>
+                <p>Define o número de colunas em que o conteúdo será dividido. Exemplo: <code>column-count: 3;</code>.</p>
+            </div>
+            <div class="property">
+                <code>column-fill</code>
+                <p>Controla como as colunas são preenchidas (balanceadas ou não). Exemplo: <code>column-fill: balance;</code>.</p>
+            </div>
+            <div class="property">
+                <code>column-gap</code>
+                <p>Define o espaço entre as colunas. Exemplo: <code>column-gap: 20px;</code>.</p>
+            </div>
+            <div class="property">
+                <code>column-rule</code>
+                <p>Define a aparência da linha entre as colunas. Exemplo: <code>column-rule: 1px solid black;</code>.</p>
+            </div>
+            <div class="property">
+                <code>column-rule-color</code>
+                <p>Define a cor da linha entre as colunas. Exemplo: <code>column-rule-color: red;</code>.</p>
+            </div>
+            <div class="property">
+                <code>column-rule-style</code>
+                <p>Define o estilo da linha entre as colunas. Exemplo: <code>column-rule-style: dashed;</code>.</p>
+            </div>
+            <div class="property">
+                <code>column-rule-width</code>
+                <p>Define a largura da linha entre as colunas. Exemplo: <code>column-rule-width: 3px;</code>.</p>
+            </div>
+            <div class="property">
+                <code>columns</code>
+                <p>Atalho para definir o número de colunas e a largura das colunas. Exemplo: <code>columns: 2 150px;</code>.</p>
+            </div>
+            <div class="property">
+                <code>column-span</code>
+                <p>Define se um elemento pode se estender por várias colunas. Exemplo: <code>column-span: all;</code>.</p>
+            </div>
+            <div class="property">
+                <code>column-width</code>
+                <p>Define a largura das colunas. Exemplo: <code>column-width: 200px;</code>.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seção de Color -->
+    <div class="section" id="color">
+        <h2>Color</h2>
+        <div class="property-list">
+            <div class="property">
+                <code>color</code>
+                <p>Define a cor do texto. Exemplo: <code>color: #333;</code>.</p>
+            </div>
+            <div class="property">
+                <code>opacity</code>
+                <p>Define a opacidade de um elemento, variando de 0 (totalmente transparente) a 1 (totalmente opaco). Exemplo: <code>opacity: 0.5;</code>.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seção de Template Layout -->
+    <div class="section" id="template-layout">
+        <h2>Template Layout</h2>
+        <div class="property-list">
+            <div class="property">
+                <code>box-align</code>
+                <p>Define o alinhamento dos itens dentro de um contêiner de layout. Exemplo: <code>box-align: center;</code>.</p>
+            </div>
+            <div class="property">
+                <code>box-direction</code>
+                <p>Define a direção dos itens dentro de um contêiner de layout. Exemplo: <code>box-direction: horizontal;</code>.</p>
+            </div>
+            <div class="property">
+                <code>box-flex</code>
+                <p>Define a flexibilidade de um item dentro de um contêiner flexível. Exemplo: <code>box-flex: 1;</code>.</p>
+            </div>
+            <div class="property">
+                <code>box-flex-group</code>
+                <p>Define o grupo de flexibilidade a que o item pertence. Exemplo: <code>box-flex-group: 1;</code>.</p>
+            </div>
+            <div class="property">
+                <code>box-lines</code>
+                <p>Define o número de linhas de um contêiner flexível. Exemplo: <code>box-lines: multiple;</code>.</p>
+            </div>
+            <div class="property">
+                <code>box-orient</code>
+                <p>Define a orientação dos itens dentro de um contêiner flexível. Exemplo: <code>box-orient: vertical;</code>.</p>
+            </div>
+            <div class="property">
+                <code>box-pack</code>
+                <p>Define o alinhamento dos itens ao longo do eixo principal. Exemplo: <code>box-pack: justify;</code>.</p>
+            </div>
+            <div class="property">
+                <code>box-sizing</code>
+                <p>Define como o tamanho de um elemento é calculado (incluindo ou não bordas e preenchimento). Exemplo: <code>box-sizing: border-box;</code>.</p>
+            </div>
+            <div class="property">
+                <code>tab-side</code>
+                <p>Define a posição dos itens dentro de um contêiner de layout baseado em abas. Exemplo: <code>tab-side: left;</code>.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seção de Table -->
+    <div class="section" id="table">
+        <h2>Table</h2>
+        <div class="property-list">
+            <div class="property">
+                <code>border-collapse</code>
+                <p>Define se as bordas das células de uma tabela serão colapsadas ou separadas. Exemplo: <code>border-collapse: collapse;</code>.</p>
+            </div>
+            <div class="property">
+                <code>border-spacing</code>
+                <p>Define o espaço entre as bordas das células de uma tabela. Exemplo: <code>border-spacing: 10px;</code>.</p>
+            </div>
+            <div class="property">
+                <code>caption-side</code>
+                <p>Define a posição do título da tabela. Exemplo: <code>caption-side: top;</code>.</p>
+            </div>
+            <div class="property">
+                <code>empty-cells</code>
+                <p>Define se as células vazias da tabela serão visíveis ou não. Exemplo: <code>empty-cells: hide;</code>.</p>
+            </div>
+            <div class="property">
+                <code>table-layout</code>
+                <p>Define o tipo de layout da tabela. Exemplo: <code>table-layout: fixed;</code>.</p>
+            </div>
+        </div>
+    </div>
+
+<!-- Seção de Speech -->
+    <div class="section" id="speech">
+        <h2>Speech</h2>
+        <div class="property-list">
+            <div class="property">
+                <code>cue</code>
+                <p>Define a cue (informações temporais ou eventos de mídia) usada na fala. Exemplo: <code>cue: url(cuefile.cue);</code>.</p>
+            </div>
+            <div class="property">
+                <code>cue-before</code>
+                <p>Define o evento que ocorre antes da cue. Exemplo: <code>cue-before: 10s;</code>.</p>
+            </div>
+            <div class="property">
+                <code>cue-after</code>
+                <p>Define o evento que ocorre após a cue. Exemplo: <code>cue-after: 5s;</code>.</p>
+            </div>
+            <div class="property">
+                <code>mark</code>
+                <p>Define a marcação para a fala, que pode ser usada para eventos específicos. Exemplo: <code>mark: 'hello';</code>.</p>
+            </div>
+            <div class="property">
+                <code>mark-before</code>
+                <p>Define o evento que ocorre antes da marcação na fala. Exemplo: <code>mark-before: 2s;</code>.</p>
+            </div>
+            <div class="property">
+                <code>mark-after</code>
+                <p>Define o evento que ocorre após a marcação na fala. Exemplo: <code>mark-after: 3s;</code>.</p>
+            </div>
+            <div class="property">
+                <code>pause</code>
+                <p>Define a pausa na fala. Exemplo: <code>pause: 1s;</code>.</p>
+            </div>
+            <div class="property">
+                <code>pause-before</code>
+                <p>Define a pausa antes da fala. Exemplo: <code>pause-before: 1s;</code>.</p>
+            </div>
+            <div class="property">
+                <code>pause-after</code>
+                <p>Define a pausa após a fala. Exemplo: <code>pause-after: 1s;</code>.</p>
+            </div>
+            <div class="property">
+                <code>phonemes</code>
+                <p>Define a transcrição fonética do texto. Exemplo: <code>phonemes: "ʃɪk"</code>.</p>
+            </div>
+            <div class="property">
+                <code>rest</code>
+                <p>Define uma pausa dentro do discurso. Exemplo: <code>rest: 200ms;</code>.</p>
+            </div>
+            <div class="property">
+                <code>rest-before</code>
+                <p>Define uma pausa antes de uma parte específica do discurso. Exemplo: <code>rest-before: 150ms;</code>.</p>
+            </div>
+            <div class="property">
+                <code>rest-after</code>
+                <p>Define uma pausa após uma parte específica do discurso. Exemplo: <code>rest-after: 150ms;</code>.</p>
+            </div>
+            <div class="property">
+                <code>speak</code>
+                <p>Define se o texto será falado. Exemplo: <code>speak: normal;</code>.</p>
+            </div>
+            <div class="property">
+                <code>voice-balance</code>
+                <p>Define o equilíbrio entre os canais de áudio da voz. Exemplo: <code>voice-balance: left;</code>.</p>
+            </div>
+            <div class="property">
+                <code>voice-duration</code>
+                <p>Define a duração da fala. Exemplo: <code>voice-duration: 5s;</code>.</p>
+            </div>
+            <div class="property">
+                <code>voice-family</code>
+                <p>Define a família de vozes que será usada. Exemplo: <code>voice-family: "female";</code>.</p>
+            </div>
+            <div class="property">
+                <code>voice-rate</code>
+                <p>Define a taxa de fala (velocidade). Exemplo: <code>voice-rate: 1.2;</code>.</p>
+            </div>
+            <div class="property">
+                <code>voice-pitch</code>
+                <p>Define o tom da voz. Exemplo: <code>voice-pitch: high;</code>.</p>
+            </div>
+            <div class="property">
+                <code>voice-pitch-range</code>
+                <p>Define a faixa de variação do tom da voz. Exemplo: <code>voice-pitch-range: 20%;</code>.</p>
+            </div>
+            <div class="property">
+                <code>voice-stress</code>
+                <p>Define o estresse da voz (ênfase nas palavras). Exemplo: <code>voice-stress: strong;</code>.</p>
+            </div>
+            <div class="property">
+                <code>voice-volume</code>
+                <p>Define o volume da voz. Exemplo: <code>voice-volume: loud;</code>.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
